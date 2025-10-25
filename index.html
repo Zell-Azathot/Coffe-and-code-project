@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Carolina Deliveries</title>
-    <link rel=" stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css">
   </head>
   <body>
     <header> 
@@ -18,13 +18,55 @@
     <main>
         <section id="produtos">
             <h1>Recheie o seu dia com Carolina Deliveries</h1>
-            <div class="carrossel"> // fazer o carrossel aqui
-                <img class="carrosel-img" src="./public/baladecoco.jpg" alt="balaCoco">
+            <div class="slider">
+              <div class="slides"> <!-- fazer o carrossel aqui, manter as imagens com a classe "carrossel-img" -->
+                  
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                  
+                  <div class="slide first">
+                    <img class="carrossel-img" src="./public/baladecoco.jpg" alt="balaCoco">
+                  </div>
+                  <div class="slide">
+                    <img class="carrossel-img" src="./public/baladecoco.jpg" alt="balaCoco">
+                  </div>
+                  <div class="slide">
+                    <img class="carrossel-img" src="./public/baladecoco.jpg" alt="balaCoco">
+                  </div>
+                  <div class="slide">
+                    <img class="carrossel-img" src="./public/baladecoco.jpg" alt="balaCoco">
+                  </div>
+              </div>
+
+                  <div class="navigation-auto">
+                      <div class="auto-btn1"></div>
+                      <div class="auto-btn2"></div>
+                      <div class="auto-btn3"></div>
+                      <div class="auto-btn4"></div>
+                  </div>
+
+                  <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"> </label>
+                    <label for="radio2" class="manual-btn"> </label>
+                    <label for="radio3" class="manual-btn"> </label>
+                    <label for="radio4" class="manual-btn"> </label>
+                  </div>
+              
             </div>
         </section>
         <section id="contato">
-            <h3>Telefone e endereço</h3>
+            <h1>Deseja pedir essa doçura na sua casa?</h1>
+            </div>
         </section>
     </main>
+    <footer>
+        <section id="assinatura">
+            <h3>Feito por Coffe and Code - Sistemas UNIFEB</h3>
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
