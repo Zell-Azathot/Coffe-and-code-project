@@ -1,72 +1,105 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Carolina Deliveries</title>
-    <link rel="stylesheet" href="index.css">
-  </head>
-  <body>
-    <header> 
-        <h2>Carolina Deliveries</h2> 
-        <nav class="nav">
-            <a class="nav-link" href="a">Carolina Deliveries</a>
-            <a class="nav-link" href="#produtos">Produtos</a>
-            <a class="nav-link" href="#contato">Contato</a>
-        </nav>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAROLINA DELIVERY - A VELOCIDADE MAIS DOCE DA CIDADE!</title>
+    <link rel = "stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!--CABEÇALHO-->
+    <header id ="Header">
+            <h1 id = "h1-header"> CAROLINA DELIVERY </h1>
+            <h3 class= "h3-header"> A MELHOR E MAIS RÁPIDA DOCERIA DA REGIÃO</h3>
+            
+            <nav id="Navegação">
+                <a class="link-cabeçalho" href="#"> Início </a>
+                <a class="link-cabeçalho" href="#"> Bebidas </a>
+                <a class="link-cabeçalho" href="#"> Doces </a>
+            </nav>
     </header>
-    <main>
-        <section id="produtos">
-            <h1>Recheie o seu dia com Carolina Deliveries</h1>
-            <div class="slider">
-              <div class="slides"> <!-- fazer o carrossel aqui, manter as imagens com a classe "carrossel-img" -->
-                  
-                    <input type="radio" name="radio-btn" id="radio1">
-                    <input type="radio" name="radio-btn" id="radio2">
-                    <input type="radio" name="radio-btn" id="radio3">
-                    <input type="radio" name="radio-btn" id="radio4">
-                  
-                  <div class="slide first">
-                    <img class="carrossel-img" src="./public/baladecoco.jpg" alt="balaCoco">
-                  </div>
-                  <div class="slide">
-                    <img class="carrossel-img" src="./public/baladecoco.jpg" alt="balaCoco">
-                  </div>
-                  <div class="slide">
-                    <img class="carrossel-img" src="./public/baladecoco.jpg" alt="balaCoco">
-                  </div>
-                  <div class="slide">
-                    <img class="carrossel-img" src="./public/baladecoco.jpg" alt="balaCoco">
-                  </div>
-              </div>
+    <br>
+    <br>
+    <br>
+    <section class="Section-1">
+        <h2 class= "h2-section1">Bem Barato PROMOÇÕES</h2>
+        <p class="p1">Somente às quintas feiras por R$ 13,50</p>
+        <p class="p1">Aproveite a OFERTA ESPECIAL!</p>
+    </section>
+    <br>
+    <br>
 
-                  <div class="navigation-auto">
-                      <div class="auto-btn1"></div>
-                      <div class="auto-btn2"></div>
-                      <div class="auto-btn3"></div>
-                      <div class="auto-btn4"></div>
-                  </div>
+    <section class="section-2" id="section-grid">
+        <br>
 
-                  <div class="manual-navigation">
-                    <label for="radio1" class="manual-btn"> </label>
-                    <label for="radio2" class="manual-btn"> </label>
-                    <label for="radio3" class="manual-btn"> </label>
-                    <label for="radio4" class="manual-btn"> </label>
-                  </div>
-              
+        <h2 class="h2-cardapio">DOCES DO NOSSO CARDÁPIO</h2>
+
+        <br>
+
+        <div class="grid">
+            <div class="sub-grid">
+                <h2 class="h2-sub-grid">BRIGADEIRO DE CHOCOLATE</h2>
+                <img class="img-doce" src="🍫 Brigadeiro de Marshmallow – Uma Explosão de Sabor! 😍🔥_Se brigadeiro já é bom, imagina com um coração de marshmallow derretendo na boca_ 🤤 Essa receita é simplesmente irresistível, perfeita para festas, pres.jpg" alt="Brigadeiro de Chocolate">
+                <b><p class="p-preços">R$ 1,97</p></b>
+                <a id="link-whatsapp" href="ttps://wa.me/16991493450?text=olá,eu gostaria de pedir um Brigadeiro de chocolate de chocolate!" target="_blank">
+                </b><button class="botao-acao">PEDIR DOCE</button>
+                </a>
             </div>
-        </section>
-        <section id="contato">
-            <h1>Deseja pedir essa doçura na sua casa?</h1>
+        </div>
+            <div class="grid">
+                <div class="sub-grid">
+                    <h2 class="h2-sub-grid">DONUTS DE CHOCOLATE</h2>
+                    <img class="img-doce" src="Chocolate Glazed Donuts by Master Baker - My Urban Treats.jpg" alt="Donuts de Chocolate e doce de leite">
+                    <b><p class="p-preços">R$ 15,50</p></b>
+                    <a id="link-whatsapp" href="https://wa.me/16991493450?text=olá,eu gostaria de pedir um Donuts de chocolate!" target="_blank">
+                    <button class="botao-acao">PEDIR DOCE</button>
+                    </a>
+                </div>
             </div>
-        </section>
-    </main>
-    <footer>
-        <section id="assinatura">
-            <h3>Feito por Coffe and Code - Sistemas UNIFEB</h3>
-        </section>
+
+            <div class="grid">
+                <div class="sub-grid">
+                    <h2 class="h2-sub-grid">COOKIE DE CHOCOLATE</h2>
+                    <img class="img-doce" src="download.jpg" alt="cookies de Chocolate">
+                    <b><p class="p-preços">R$ 9,75</p></b>
+                    <a id="link-whatsapp" href="https://wa.me/16991493450?text=olá,eu gostaria de pedir um cookie de chocolate!" target="_blank"> <!--target é utilizado para abrir o whatsapp sem sair da página-->
+                    <button class="botao-acao">PEDIR DOCE</button>
+                    </a>
+                </div> 
+            </div>  
+            <div class="grid">
+                <div class="sub-grid">
+                    <h2 class="h2-sub-grid">BRIGADEIRO GOURMET</h2>
+                    <img class="img-doce" src="Brigadeiro Gourmet de Café ☕️😍 – A Doce Surpresa!.jpeg" alt="BRIGADEIRO GOURMET">
+                    <b><p class="p-preços">R$ 10,75</p></b>
+                    <a id="link-whatsapp" href="https://wa.me/16991493450?text=olá,eu gostaria de pedir um cookie de chocolate!" target="_blank"> <!--target é utilizado para abrir o whatsapp sem sair da página-->
+                    <button class="botao-acao">PEDIR DOCE</button>
+                    </a>
+                </div> 
+            </div>   
+    </section>
+    <br>
+    <br>
+    <br>
+
+    <a class="botão-whatsapp" href="https://wa.me/16991493450?text=olá,eu gostaria de fazer um pedido!">
+        <i class="Fa fa-whatsapp"></i>
+    <br>
+    <br>
+    <br>
+    </a>
+    <footer id="rodapé">
+        <h2 id="h2-rodapé">CONTATO DA DOCERIA</h2>
+        <p class="p1-footer">WhatsApp: (17)00000-0000</p>
+        <p class="p1-footer">E-mail: caroline_delivery@gmail.com
+        <p class="p1-footer">CNPJ:XX.XXX.XXX/0001-XX
+        <p class="p1-footer">DESENVOLVEDOR: Weslley Jonathan Pinto Veiga</p>
     </footer>
 
-    <script src="script.js"></script>
-  </body>
+
+
+    <script type = "text/javascript"src ="estilo.js"></script>
+</body>
 </html>
