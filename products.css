@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav-link, .nav a {
+  color: #AB465C;
+  font-family: monospace;
+  font-size: 1.5vw;
+  margin-left: 4vw;
+  font-weight: 600;
+}
+
+header {
+  align-items: center;
+  background-color: #ffb5a7;
+  display: flex;
+  justify-content: space-between;
+  max-height: 10vh;
+  padding: 1.7vw;
+}
+
+/* Parte dos produtos */
+
+#produtos {
+  align-items: center;
+  background-color: #fcd5ce;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 10vh 5vw; 
+}
+
+#produtos-title {
+  color: #64141B;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 8vh;
+}
+
+#produtos-span {
+  color: #AB465C;
+}
+
+.box-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin-top: 15vh;
+}
+
+.box {
+  align-items: center;
+  background-color: #f8edeb;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: #bd6555 5px 5px 8px;
+  width: 25vw;
+  margin: 0 1vw 8vh 1vw;
+  padding: 5vh 0;
+}
+
+.prod-img {
+  height: 40vh;
+  width: 20vw;
+}
+
+.prod-nome {
+  color: #64141B;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 4vh;
+  margin-top: 2vh;
+}
+
+.prod-valor {
+  color: #AB465C;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-size: 3vh;
+  margin-top: 2vh; 
+}
+
+#contato {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#contato-text {
+  color: #64141B;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-size: 5vh;
+  margin: 4vh 0 2vh 0; 
+}
+
+.fa-whatsapp{
+    color: green;
+    font-size: 3vw;
+    transform: scale(1.1);
+}
+
+footer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: auto; /* Empurra o footer para o final */
+  padding: 20px 0; 
+  background-color: #ffb5a7;
+}
